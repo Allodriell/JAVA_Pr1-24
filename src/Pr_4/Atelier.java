@@ -1,6 +1,6 @@
 package Pr_4;
 
-public class Atelier implements MenClothing, WomenClothing{
+public class Atelier implements ManClothing, WomenClothing{
     Clothes[] clothes_list;
 
     public Atelier(Clothes[] clothes_list) {
@@ -11,7 +11,7 @@ public class Atelier implements MenClothing, WomenClothing{
     public void DressMan() {
         for(Clothes c : clothes_list){
             System.out.println();
-            if (c instanceof MenClothing) {
+            if (c instanceof ManClothing) {
                 if(c instanceof TShirt){System.out.println("футболка");
                     System.out.println("размер: " + c.size);
                     System.out.println(c.size.getDescription());}

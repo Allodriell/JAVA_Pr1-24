@@ -1,6 +1,6 @@
 package Pr_4;
 
-public class Pants extends Clothes implements MenClothing,  WomenClothing{
+public class Pants extends Clothes implements ManClothing,  WomenClothing{
     @Override
     public void DressMan() {
 
